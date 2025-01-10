@@ -19,7 +19,7 @@ const UpdateUser = () => {
   }
   
   useEffect(()=>{
-    axios.get(`http://localhost:8000/route/getDataById/${id}`)
+    axios.get(`https://mernstack-crud-backend.onrender.com/route/getDataById/${id}`)
     .then((response)=>{
       setuser(response.data)
     })
