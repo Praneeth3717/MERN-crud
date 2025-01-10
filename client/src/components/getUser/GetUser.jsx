@@ -8,7 +8,7 @@ const User = () => {
   useEffect(()=>{
     const fetchData=async()=>{
       try {
-        const response=await axios.get("http://localhost:8000/route/get");
+        const response=await axios.get("https://mernstack-crud-backend.onrender.com/route/get");
         setData(response.data)
       } catch (error) {
         console.log("Error while fetching the Data",error)
@@ -18,7 +18,7 @@ const User = () => {
   },[])
 
   const deleteUser=async(userId)=>{
-    await axios.delete(`http://localhost:8000/route/delete/${userId}`)
+    await axios.delete(`https://mernstack-crud-backend.onrender.com/route/delete/${userId}`)
     .then((response)=>{
         console.log(response)
       setData((prevUser)=>prevUser.filter((Data)=>Data._id!==userId))
