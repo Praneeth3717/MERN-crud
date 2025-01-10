@@ -31,7 +31,7 @@ const UpdateUser = () => {
   const userSubmit=async(e)=>{
     e.preventDefault();
     try {
-      const response=await axios.put(`http://localhost:8000/route/update/${id}`,user)
+      const response=await axios.put(`https://mernstack-crud-backend.onrender.com/route/update/${id}`,user)
       console.log(response.data);
       navigate('/')
     } catch (error) {
