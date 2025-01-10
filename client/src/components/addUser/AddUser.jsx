@@ -20,7 +20,7 @@ const AddUser = () => {
   const userSubmit=async(e)=>{
     e.preventDefault();
     try {
-      const response=await axios.post('http://localhost:8000/route/post',user)
+      const response=await axios.post('https://mernstack-crud-backend.onrender.com/route/post',user)
       console.log(response.data);
       navigate('/')
     } catch (error) {
