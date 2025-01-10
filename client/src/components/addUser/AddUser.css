@@ -1,0 +1,27 @@
+.newUser{
+    background-color: white;
+    width:30%;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+}
+.userForm .inputForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.userForm .inputForm label{
+    margin-top: 5px;
+}
+.userForm .inputForm input{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.newUser h3{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.userForm .inputForm button{
+    margin-top: 10px;
+}
